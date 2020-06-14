@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(weather.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    position: relative;
+}
+.input {
+    position: absolute;
+    margin-top: 10px;
+    top: 0;
+    left: 0;
+    width: 50%;
+    margin-left: 5px;
+    height: 30px;
+    
+}
+
+
+.input input {
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 3px 3px 1px 1px black;
+    margin-right: 8px;
+    background-color: rgb(70, 70, 70);
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+    padding-left: 10px;
+}
+.login {
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin-top: 10px;
+   margin-right: 20px;
+   
+     
+  
+}
+.login button {
+    height: 33px;  
+    width: 70px;
+}
+button{
+    font-family: monospace;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 3px 2px 1px 1px black;
+    background-color: rgb(70, 70, 70);
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    font-size: 14px;
+    transition: linear;
+    margin-top: 1px;
+    
+}
+
+button:active {
+    color: rgb(70, 70, 70) ;
+    background-color: white;
+    border: 1px solid white;
+}
+.input button {
+    width: 25%;
+    height: 34px;
+    outline: none;    
+}
+
+.box {
+    padding-top: 20px;
+    position: absolute;
+    color: rgb(253, 253, 253);
+    width: 80%;
+    height: 40%;
+    text-align: center;   
+}
+#temp {
+    cursor: pointer;
+    
+}
+#state {
+    position: relative;
+}
+
+#temp::after{
+    content: 'F';
+    margin-left: 10px;
+}
+#city::after{
+    content: ',';
+    
+}
+#wind::after{
+    content: 'MPH';
+    margin-left: 5px;
+    
+}
+.place {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.weather {
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+#temp {
+    margin-bottom: 8px;
+}
+@media (max-width: 550px) {
+    
+}
